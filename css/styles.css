@@ -324,13 +324,21 @@ img {
   position: relative;
 }
 
-.form-list .icon {
+.form-icon {
   position: absolute;
   top: 50%;
   left: 15px;
 
   transform: translateY(-50%);
-  fill: #212121;
+
+  translate: fill;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-submit .font-style:hover a::after {
+  width: 100%;
 }
 
 .social-networks li {
@@ -542,10 +550,11 @@ img {
 .form-list .form-input:hover,
 .form-list .form-input:focus,
 .form-list .textarea:hover,
-.form-list .textarea:focus,
-.form-list svg:hover,
-.form-list svg:focus {
+.form-list .textarea:focus {
   border-color: #2196f3;
+}
+.form-list .form-input:hover + .form-icon,
+.form-list .form-inputfocus + .form-icon {
   fill: #2196f3;
 }
 
@@ -954,6 +963,7 @@ img {
 
 .form-footer .form-input {
   padding: 15px 16px;
+  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;

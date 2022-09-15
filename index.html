@@ -82,7 +82,7 @@
                           minlength="2"
                           required
                         />
-                        <svg class="icon" width="12" height="12px">
+                        <svg class="form-icon" width="12" height="12px">
                           <use href="./images/icons/symbol-defs.svg#form-ava"></use>
                         </svg>
                       </div>
@@ -91,7 +91,7 @@
                       <label class="font-style" for="tel"> Телефон</label>
                       <div class="null">
                         <input class="form-input" type="tel" name="tel" id="tel" required />
-                        <svg class="icon" width="13" height="13px">
+                        <svg class="form-icon" width="13" height="13px">
                           <use href="./images/icons/symbol-defs.svg#form-phone"></use>
                         </svg>
                       </div>
@@ -101,7 +101,7 @@
                       <div class="null">
                         <input class="form-input" type="email" name="mail" id="mail" required />
 
-                        <svg class="icon" width="15" height="12px">
+                        <svg class="form-icon" width="15" height="12px">
                           <use href="./images/icons/symbol-defs.svg#form-mail"></use>
                         </svg>
                       </div>
@@ -118,32 +118,26 @@
                     </li>
                   </ul>
 
-                  <ul class="form-submit">
-                    <li>
-                      <input
-                        class="input-checkbox visually-hidden"
-                        type="checkbox"
-                        name="policy"
-                        id="policy"
-                      />
-                      <label class="font-style" for="policy">
-                        <span class="icon-submit">
-                          <svg class="icon-mark" width="11" height="8">
-                            <use href="./images/icons/symbol-defs.svg#form-mark"></use>
-                          </svg>
-                          <svg class="icon-background" width="16" height="15">
-                            <use href="./images/icons/symbol-defs.svg#form-rect"></use>
-                          </svg> </span
-                        >Погоджуюся з розсилкою та приймаю &ensp;
-                        <a href="" target="_blank" rel="noopener noreferrer"
-                          >Умови договору</a
-                        ></label
-                      >
-                    </li>
-                    <li>
-                      <button class="btn-style" type="submit">Відправити</button>
-                    </li>
-                  </ul>
+                  <div class="form-submit">
+                    <input
+                      class="input-checkbox visually-hidden"
+                      type="checkbox"
+                      name="policy"
+                      id="policy"
+                    />
+                    <label class="font-style" for="policy">
+                      <span class="icon-submit">
+                        <svg class="icon-mark" width="11" height="8">
+                          <use href="./images/icons/symbol-defs.svg#form-mark"></use>
+                        </svg>
+                        <svg class="icon-background" width="16" height="15">
+                          <use href="./images/icons/symbol-defs.svg#form-rect"></use>
+                        </svg> </span
+                      >Погоджуюся з розсилкою та приймаю &ensp;
+                      <a href="" target="_blank" rel="noopener noreferrer">Умови договору</a></label
+                    >
+                    <button class="btn-style" type="submit">Відправити</button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -511,7 +505,13 @@
           <form class="form-footer">
             <ul class="form-field">
               <li class="form-list">
-                <input class="form-input" type="email" name="subscribe" placeholder="E-mail" />
+                <input
+                  class="form-input"
+                  type="email"
+                  name="subscribe"
+                  placeholder="E-mail"
+                  required
+                />
               </li>
               <li>
                 <button class="btn-style" type="submit">
