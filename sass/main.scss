@@ -1,0 +1,15 @@
+@import './base/var.scss';
+@import './base/reset.scss';
+@import './base/wrappers';
+@import './base/social-link';
+
+@import './components/header';
+@import './components/effective-solution';
+@import './components/effective-solutions__form';
+@import './components/benefits';
+@import './components/works';
+@import './components/command';
+@import './components/clients';
+@import './components/footer';
+
+@import './modify/visually-hidden';
