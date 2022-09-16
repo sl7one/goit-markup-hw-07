@@ -823,6 +823,7 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  min-width: 1200px;
 }
 
 .radio {
@@ -892,8 +893,9 @@ address {
 
 .object-img {
   position: absolute;
+  z-index: 0;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   display: flex;
   align-items: center;
   padding: 24px;
