@@ -25,6 +25,7 @@ a {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 h1,
@@ -68,6 +69,27 @@ address {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.button {
+  max-width: 217px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background: var(--acent);
+  border-radius: 4px;
+  transition: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .social-networks {
@@ -241,28 +263,6 @@ address {
   line-height: 1.3636363636;
   letter-spacing: 0.06em;
   text-align: center;
-}
-
-.effective-solutions__button {
-  max-width: 217px;
-  padding: 10px 32px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.effective-solutions__button:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.effective-solutions__button:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .benefits {
