@@ -1,9 +1,9 @@
 @import './base/var.scss';
 @import './base/reset.scss';
 @import './base/wrappers';
-@import './base/form';
-@import './base/button';
 @import './base/social-link';
+
+@import './modify/visually-hidden';
 
 @import './components/studia/header';
 @import './components/studia/effective-solution';
@@ -14,4 +14,4 @@
 @import './components/studia/clients';
 @import './components/studia/footer';
 
-@import './modify/visually-hidden';
+@import './components/portfolio/radio-buttons';
