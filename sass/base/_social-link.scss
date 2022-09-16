@@ -8,9 +8,6 @@
   margin-top: 16px;
 }
 
-.social-networks__item {
-}
-
 .social-networks__link {
   display: flex;
   justify-content: center;
@@ -20,9 +17,6 @@
   border-radius: 50%;
 
   transition: background-color;
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     background-color: var(--acent);
@@ -53,8 +47,7 @@
 
   transition: fill;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation;
 
   &.social-networks__icon--fill {
     fill: var(--white);

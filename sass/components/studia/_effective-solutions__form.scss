@@ -11,12 +11,9 @@
 
   transform: translate(-50%, -50%);
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  @include shadow__card;
 }
 
 .backdrop {
@@ -29,8 +26,7 @@
 
   transition: opacity, visibility;
 
-  transition-duration: 750ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation;
 }
 
 .backdrop.is-hidden {
@@ -108,11 +104,11 @@
 
   transition: border;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation;
 
   &:hover {
     border-color: var(--acent);
+
     & + .modal-form__icon {
       fill: var(--acent);
     }
@@ -135,8 +131,7 @@
 
   translate: fill;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation;
 }
 
 .input-posotion {
@@ -153,8 +148,7 @@
 
   transition: border;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation;
 
   &:hover {
     border-color: #2196f3;
@@ -215,8 +209,8 @@
     background-color: var(--acent);
 
     transform: width;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include animation;
   }
 }
 
@@ -254,15 +248,12 @@
   fill: transparent;
   transition: fill;
 
-  transition-duration: 750ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation;
 }
 
 .icon-object__background {
   transition: background-color;
-
-  transition-duration: 750ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation;
 }
 
 .modal-policy__checkbox {

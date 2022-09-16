@@ -27,7 +27,7 @@
 
 //-----------------------------------------------//@at-root
 
-.button {
+.effective-solutions__button {
   max-width: 217px;
   padding: 10px 32px;
   font-weight: 700;
@@ -39,15 +39,13 @@
   background: var(--acent);
   border-radius: 4px;
 
-  transition: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation;
 
   &:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    @include shadow__button;
   }
 
   &:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    @include shadow__button;
   }
 }
