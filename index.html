@@ -65,111 +65,103 @@
     <main>
       <!--EFFECTIVE-SOLUTIONS--------------------------------->
 
-      <section class="hero">
-        <div class="hero__img">
-          <div class="container">
-            <div class="hero__wrapper">
-              <h1 class="hero__title">Ефективні рішення для <br />вашого бізнесу</h1>
-              <button class="hero__button" data-modal-open autofocus type="button">
-                Замовити послугу
+      <section class="hero section">
+        <div class="container">
+          <h1 class="hero__title">Ефективні рішення для <br />вашого бізнесу</h1>
+          <button class="hero__button" data-modal-open autofocus type="button">
+            Замовити послугу
+          </button>
+        </div>
+
+        <div data-modal class="backdrop is-hidden">
+          <div class="modal-object">
+            <div class="modal">
+              <button class="modal__button-close" data-modal-close>
+                <svg width="11" height="11">
+                  <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                </svg>
               </button>
-            </div>
-          </div>
 
-          <div data-modal class="backdrop is-hidden">
-            <div class="modal-object">
-              <div class="modal">
-                <button class="modal__button-close" data-modal-close>
-                  <svg width="11" height="11">
-                    <use href="./images/icons/symbol-defs.svg#icon-close"></use>
-                  </svg>
-                </button>
+              <b class="modal__title">Залиште свої дані, ми вам передзвонимо</b>
 
-                <b class="modal__title">Залиште свої дані, ми вам передзвонимо</b>
+              <form class="modal-form">
+                <ul class="modal-form__field">
+                  <li class="modal-form__list">
+                    <label class="modal-form__label" for="name"> Ім'я</label>
+                    <div class="input-posotion">
+                      <input
+                        class="modal-form__input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        minlength="2"
+                        required
+                      />
+                      <svg class="modal-form__icon" width="12" height="12px">
+                        <use href="./images/icons/symbol-defs.svg#form-ava"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="modal-form__list">
+                    <label class="modal-form__label" for="tel"> Телефон</label>
+                    <div class="input-posotion">
+                      <input class="modal-form__input" type="tel" name="tel" id="tel" required />
+                      <svg class="modal-form__icon" width="13" height="13px">
+                        <use href="./images/icons/symbol-defs.svg#form-phone"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="modal-form__list">
+                    <label class="modal-form__label" for="mail"> Пошта</label>
+                    <div class="input-posotion">
+                      <input
+                        class="modal-form__input"
+                        type="email"
+                        name="mail"
+                        id="mail"
+                        required
+                      />
 
-                <form class="modal-form">
-                  <ul class="modal-form__field">
-                    <li class="modal-form__list">
-                      <label class="modal-form__label" for="name"> Ім'я</label>
-                      <div class="input-posotion">
-                        <input
-                          class="modal-form__input"
-                          type="text"
-                          name="name"
-                          id="name"
-                          minlength="2"
-                          required
-                        />
-                        <svg class="modal-form__icon" width="12" height="12px">
-                          <use href="./images/icons/symbol-defs.svg#form-ava"></use>
-                        </svg>
-                      </div>
-                    </li>
-                    <li class="modal-form__list">
-                      <label class="modal-form__label" for="tel"> Телефон</label>
-                      <div class="input-posotion">
-                        <input class="modal-form__input" type="tel" name="tel" id="tel" required />
-                        <svg class="modal-form__icon" width="13" height="13px">
-                          <use href="./images/icons/symbol-defs.svg#form-phone"></use>
-                        </svg>
-                      </div>
-                    </li>
-                    <li class="modal-form__list">
-                      <label class="modal-form__label" for="mail"> Пошта</label>
-                      <div class="input-posotion">
-                        <input
-                          class="modal-form__input"
-                          type="email"
-                          name="mail"
-                          id="mail"
-                          required
-                        />
+                      <svg class="modal-form__icon" width="15" height="12px">
+                        <use href="./images/icons/symbol-defs.svg#form-mail"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="modal-form__list">
+                    <label class="modal-form__label" for="comment">Коментар</label>
+                    <textarea
+                      class="modal-form__textarea"
+                      name="comment"
+                      id="comment"
+                      placeholder="Введіть текст"
+                      autocomplete="off"
+                    ></textarea>
+                  </li>
+                </ul>
 
-                        <svg class="modal-form__icon" width="15" height="12px">
-                          <use href="./images/icons/symbol-defs.svg#form-mail"></use>
-                        </svg>
-                      </div>
-                    </li>
-                    <li class="modal-form__list">
-                      <label class="modal-form__label" for="comment">Коментар</label>
-                      <textarea
-                        class="modal-form__textarea"
-                        name="comment"
-                        id="comment"
-                        placeholder="Введіть текст"
-                        autocomplete="off"
-                      ></textarea>
-                    </li>
-                  </ul>
-
-                  <div class="modal-policy">
-                    <input
-                      class="modal-policy__checkbox visually-hidden"
-                      type="checkbox"
-                      name="policy"
-                      id="policy"
-                    />
-                    <label class="modal-policy__text" for="policy">
-                      <span class="modal-policy__icon-object">
-                        <svg class="icon-object__mark" width="11" height="8">
-                          <use href="./images/icons/symbol-defs.svg#form-mark"></use>
-                        </svg>
-                        <svg class="icon-object__background" width="16" height="15">
-                          <use href="./images/icons/symbol-defs.svg#form-rect"></use>
-                        </svg> </span
-                      >Погоджуюся з розсилкою та приймаю &ensp;
-                      <a
-                        class="modal-policy__link"
-                        href=""
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >Умови договору</a
-                      ></label
-                    >
-                    <button class="btn-style" type="submit">Відправити</button>
-                  </div>
-                </form>
-              </div>
+                <div class="modal-policy">
+                  <input
+                    class="modal-policy__checkbox visually-hidden"
+                    type="checkbox"
+                    name="policy"
+                    id="policy"
+                  />
+                  <label class="modal-policy__text" for="policy">
+                    <span class="modal-policy__icon-object">
+                      <svg class="icon-object__mark" width="11" height="8">
+                        <use href="./images/icons/symbol-defs.svg#form-mark"></use>
+                      </svg>
+                      <svg class="icon-object__background" width="16" height="15">
+                        <use href="./images/icons/symbol-defs.svg#form-rect"></use>
+                      </svg> </span
+                    >Погоджуюся з розсилкою та приймаю &ensp;
+                    <a class="modal-policy__link" href="" target="_blank" rel="noopener noreferrer"
+                      >Умови договору</a
+                    ></label
+                  >
+                  <button class="btn-style" type="submit">Відправити</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -177,326 +169,304 @@
 
       <!--BENEFITS----------------------------------------------->
 
-      <section class="benefits">
+      <section class="benefits section benefits--drop-padding">
         <div class="container">
-          <div class="section section--drop-padding">
-            <h2 class="visually-hidden">Переваги</h2>
-            <ul class="benefits__list">
-              <li class="benefits__item">
-                <div class="benefits__picture">
-                  <svg class="benefits__icon">
-                    <use href="./images/icons/symbol-defs.svg#icon-radar"></use>
-                  </svg>
+          <h2 class="visually-hidden">Переваги</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <div class="benefits__picture">
+                <svg class="benefits__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-radar"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__hederline">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits__text">
+                Ідейні міркування, i навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__picture">
+                <svg class="benefits__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__hederline">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits__text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__picture">
+                <svg class="benefits__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__hederline">ПЛАНУВАННЯ</h3>
+              <p class="benefits__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__picture">
+                <svg class="benefits__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__hederline">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits__text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--WORKS------------------------------------------------->
+
+      <section class="works section">
+        <div class="container">
+          <h2 class="works__title">Чим ми займаємося</h2>
+          <ul class="works__list">
+            <li class="works__item">
+              <div class="sticker">
+                <div class="sticker__overlay">
+                  <img src="./images/work-1.jpg" alt="picture pc" height="294" width="370" />
+                  <p class="sticker__text">Десктопні додатки</p>
                 </div>
-                <h3 class="benefits__hederline">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="benefits__text">
-                  Ідейні міркування, i навіть початок повсякденної роботи з формування позиції.
-                </p>
+              </div>
+            </li>
+            <li class="works__item">
+              <div class="sticker__overlay">
+                <div class="sticker">
+                  <div class="sticker__overlay">
+                    <img src="./images/work-2.jpg" alt="picture mobile" height="294" width="370" />
+                    <p class="sticker__text">Мобільні додатки</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="works__item">
+              <div class="sticker__overlay">
+                <div class="sticker">
+                  <div class="sticker__overlay">
+                    <img src="./images/work-3.jpg" alt="picture tablet" height="294" width="370" />
+                    <p class="sticker__text">Дизайнерські рішення</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--COMMAND-------------------------------------------------->
+
+      <section class="command section command--color">
+        <div class="container">
+          <div class="command__wrapper">
+            <h2 class="command__title">Наша команда</h2>
+            <ul class="command__list">
+              <li class="command__card">
+                <img src="./images/command1.jpg" alt="Igor photo" width="270" />
+                <div class="command__meta">
+                  <h3 class="command__name">Ігор Дем'яненко</h3>
+                  <p class="command__prof">Product Designer</p>
+                  <ul class="social-networks">
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-twit"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-face"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-link"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li class="benefits__item">
-                <div class="benefits__picture">
-                  <svg class="benefits__icon">
-                    <use href="./images/icons/symbol-defs.svg#icon-clock"></use>
-                  </svg>
+              <li class="command-card">
+                <img src="./images/command2.jpg" alt="Olga photo" width="270" />
+                <div class="command-card__meta">
+                  <h3 class="command-card__name">Ольга Рєпіна</h3>
+                  <p class="command-card__prof">Frontend Developer</p>
+                  <ul class="social-networks">
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-twit"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-face"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-link"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <h3 class="benefits__hederline">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="benefits__text">
-                  Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-                </p>
               </li>
-              <li class="benefits__item">
-                <div class="benefits__picture">
-                  <svg class="benefits__icon">
-                    <use href="./images/icons/symbol-defs.svg#icon-diagram"></use>
-                  </svg>
+              <li class="command-card">
+                <img src="./images/command3.jpg" alt="Mikola photo" width="270" />
+                <div class="command-card__meta">
+                  <h3 class="command-card__name">Микола Тарасов</h3>
+                  <p class="command-card__prof">Marketing</p>
+                  <ul class="social-networks">
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-twit"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-face"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-link"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <h3 class="benefits__hederline">ПЛАНУВАННЯ</h3>
-                <p class="benefits__text">
-                  Так само консультація з широким активом значною мірою зумовлює.
-                </p>
               </li>
-              <li class="benefits__item">
-                <div class="benefits__picture">
-                  <svg class="benefits__icon">
-                    <use href="./images/icons/symbol-defs.svg#icon-astronaut"></use>
-                  </svg>
+              <li class="command-card">
+                <img src="./images/command4.jpg" alt="Igor photo" width="270" />
+                <div class="command-card__meta">
+                  <h3 class="command-card__name">Михайло Єрмаков</h3>
+                  <p class="command-card__prof">UI Designer</p>
+                  <ul class="social-networks">
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-twit"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-face"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__icon">
+                          <use href="./images/icons/symbol-defs.svg#icon-link"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <h3 class="benefits__hederline">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="benefits__text">
-                  Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                </p>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!--WORKS------------------------------------------------->
-
-      <section class="works">
-        <div class="container">
-          <div class="section">
-            <div class="works__wrap">
-              <h2 class="works__title">Чим ми займаємося</h2>
-              <ul class="works__list">
-                <li class="works__item">
-                  <div class="sticker">
-                    <div class="sticker__overlay">
-                      <img src="./images/work-1.jpg" alt="picture pc" height="294" width="370" />
-                      <p class="sticker__text">Десктопні додатки</p>
-                    </div>
-                  </div>
-                </li>
-                <li class="works__item">
-                  <div class="sticker__overlay">
-                    <div class="sticker">
-                      <div class="sticker__overlay">
-                        <img
-                          src="./images/work-2.jpg"
-                          alt="picture mobile"
-                          height="294"
-                          width="370"
-                        />
-                        <p class="sticker__text">Мобільні додатки</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="works__item">
-                  <div class="sticker__overlay">
-                    <div class="sticker">
-                      <div class="sticker__overlay">
-                        <img
-                          src="./images/work-3.jpg"
-                          alt="picture tablet"
-                          height="294"
-                          width="370"
-                        />
-                        <p class="sticker__text">Дизайнерські рішення</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--COMMAND-------------------------------------------------->
-
-      <section class="command">
-        <div class="container">
-          <div class="section section--color">
-            <div class="command__wrapper">
-              <h2 class="command__title">Наша команда</h2>
-              <ul class="command__list">
-                <li class="command-card">
-                  <img src="./images/command1.jpg" alt="Igor photo" width="270" />
-                  <div class="command-card__meta">
-                    <h3 class="command-card__name">Ігор Дем'яненко</h3>
-                    <p class="command-card__prof">Product Designer</p>
-                    <ul class="social-networks">
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-inst"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-twit"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-face"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-link"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="command-card">
-                  <img src="./images/command2.jpg" alt="Olga photo" width="270" />
-                  <div class="command-card__meta">
-                    <h3 class="command-card__name">Ольга Рєпіна</h3>
-                    <p class="command-card__prof">Frontend Developer</p>
-                    <ul class="social-networks">
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-inst"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-twit"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-face"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-link"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="command-card">
-                  <img src="./images/command3.jpg" alt="Mikola photo" width="270" />
-                  <div class="command-card__meta">
-                    <h3 class="command-card__name">Микола Тарасов</h3>
-                    <p class="command-card__prof">Marketing</p>
-                    <ul class="social-networks">
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-inst"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-twit"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-face"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-link"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="command-card">
-                  <img src="./images/command4.jpg" alt="Igor photo" width="270" />
-                  <div class="command-card__meta">
-                    <h3 class="command-card__name">Михайло Єрмаков</h3>
-                    <p class="command-card__prof">UI Designer</p>
-                    <ul class="social-networks">
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-inst"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-twit"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-face"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social-networks__item">
-                        <a class="social-networks__link" href="">
-                          <svg class="social-networks__icon">
-                            <use href="./images/icons/symbol-defs.svg#icon-link"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!--CLIENTS---------------------------------------------------->
-      <section class="clients">
+      <section class="clients section">
         <div class="container">
-          <div class="section">
-            <div class="clients__wrapper">
-              <h2 class="clients__title">Постійні клієнти</h2>
-              <ul class="clients__list">
-                <li class="clients__item">
-                  <a class="clients__link" href="">
-                    <svg class="clients__icon">
-                      <use href="./images/icons/symbol-defs.svg#icon-client-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="clients__item">
-                  <a class="clients__link" href="">
-                    <svg class="clients__icon">
-                      <use href="./images/icons/symbol-defs.svg#icon-client-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="clients__item">
-                  <a class="clients__link" href="">
-                    <svg class="clients__icon">
-                      <use href="./images/icons/symbol-defs.svg#icon-client-3"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="clients__item">
-                  <a class="clients__link" href="">
-                    <svg class="clients__icon">
-                      <use href="./images/icons/symbol-defs.svg#icon-client-4"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="clients__item">
-                  <a class="clients__link" href="">
-                    <svg class="clients__icon">
-                      <use href="./images/icons/symbol-defs.svg#icon-client-5"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="clients__list">
-                  <a class="clients__link" href="">
-                    <svg class="clients__icon">
-                      <use href="./images/icons/symbol-defs.svg#icon-client-6"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <h2 class="clients__title">Постійні клієнти</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-client-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-client-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-client-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-client-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-client-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__list">
+              <a class="clients__link" href="">
+                <svg class="clients__icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-client-6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -567,9 +537,9 @@
           <div class="subscribe">
             <b class="subscribe__title">Підпишіться на розсилку</b>
             <form>
-              <div class="form">
+              <div class="subscribe__form">
                 <input
-                  class="form__input"
+                  class="subscribe__input"
                   type="email"
                   name="subscribe"
                   placeholder="E-mail"

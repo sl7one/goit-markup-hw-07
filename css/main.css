@@ -221,23 +221,15 @@ address {
   fill: currentColor;
 }
 
-.hero__img {
+.hero {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: #2f303a;
   height: 600px;
   max-width: 1600px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
   background-size: cover;
   margin: 0px auto;
-}
-.hero__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
 }
 .hero__title {
   text-transform: uppercase;
@@ -247,8 +239,10 @@ address {
   line-height: 1.3636363636;
   letter-spacing: 0.06em;
   text-align: center;
+  margin-bottom: 30px;
 }
 .hero__button {
+  display: block;
   max-width: 217px;
   padding: 10px 32px;
   font-weight: 700;
@@ -258,6 +252,7 @@ address {
   color: var(--white);
   background: var(--acent);
   border-radius: 4px;
+  margin: 0px auto;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -504,6 +499,9 @@ address {
   background-color: var(--acent);
 }
 
+.benefits--drop-padding {
+  padding-bottom: 0px;
+}
 .benefits__list {
   text-align: left;
   display: flex;
@@ -542,12 +540,6 @@ address {
   margin-top: 10px;
 }
 
-.works__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-}
 .works__title {
   display: block;
   font-weight: 700;
@@ -555,6 +547,8 @@ address {
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--primiry);
+  margin-bottom: 50px;
+  text-align: center;
 }
 .works__list {
   display: flex;
@@ -582,15 +576,8 @@ address {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.section.section--color {
+.command--color {
   background-color: var(--secondary-main-color);
-}
-
-.command__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  align-items: center;
 }
 .command__title {
   font-weight: 700;
@@ -598,30 +585,31 @@ address {
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--primiry);
+  margin-bottom: 50px;
+  text-align: center;
 }
 .command__list {
   display: flex;
   text-align: center;
   gap: 30px;
 }
-
-.command-card {
+.command__card {
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
 }
-.command-card__meta {
+.command__meta {
   padding: 30px 32px;
 }
-.command-card__name {
+.command__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
   color: var(--primiry);
 }
-.command-card__prof {
+.command__prof {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1875;
@@ -630,12 +618,6 @@ address {
   margin-top: 10px;
 }
 
-.clients__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-}
 .clients__title {
   font-weight: 700;
   font-size: 36px;
@@ -643,6 +625,7 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primiry);
+  margin-bottom: 50px;
 }
 .clients__list {
   display: flex;
@@ -765,13 +748,12 @@ address {
 .subscribe__icon {
   fill: var(--white);
 }
-
-.form {
+.subscribe__form {
   display: flex;
   flex-direction: row;
   gap: 12px;
 }
-.form__input {
+.subscribe__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -783,15 +765,15 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:hover {
+.subscribe__input:hover {
   border: 1px solid var(--acent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.form__input:focus {
+.subscribe__input:focus {
   border: 1px solid var(--acent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.form__input::placeholder {
+.subscribe__input::placeholder {
   display: inline-block;
   font-weight: 400;
   font-size: 16px;

@@ -1,15 +1,6 @@
-.section {
-  &.section--color {
-    background-color: var(--secondary-main-color);
-  }
-}
-
 .command {
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
+  &--color {
+    background-color: var(--secondary-main-color);
   }
 
   &__title {
@@ -19,6 +10,8 @@
     letter-spacing: 0.03em;
 
     color: var(--primiry);
+    margin-bottom: 50px;
+    text-align: center;
   }
 
   &__list {
@@ -26,13 +19,13 @@
     text-align: center;
     gap: 30px;
   }
-}
 
-.command-card {
-  width: 270px;
-  @include shadow__card;
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--white);
+  &__card {
+    width: 270px;
+    @include shadow__card;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white);
+  }
 
   &__meta {
     padding: 30px 32px;

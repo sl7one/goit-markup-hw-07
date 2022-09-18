@@ -99,12 +99,12 @@
   &__icon {
     fill: var(--white);
   }
-}
 
-.form {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
+  &__form {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
 
   &__input {
     width: 358px;
